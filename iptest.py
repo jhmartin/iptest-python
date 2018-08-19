@@ -3,7 +3,7 @@ import requests
 
 for x in range(0, 10000):
   r = requests.get('http://ip')
-  print("SIMPLE\t" + r.text)
+  print("SIMPLE\t" + r.text.rstrip("\r\n"))
 
 for x in range(0, 10000):
   r = requests.get('http://ip')
